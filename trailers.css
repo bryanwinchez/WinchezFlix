@@ -1,0 +1,214 @@
+/*Fonte e Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hammersmith One", sans-serif;
+}
+
+/* Fundo Geral */
+body {
+    background-color: #000000;
+    color: white;
+}
+
+/* ---- CABEÇALHO ---- */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 280px;
+}
+
+nav ul {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #e62429;
+}
+
+/* ---- BANNER DO FILME ---- */
+.banner {
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    border-radius: 15px;
+    background: url('BACKGROUND.jpg') no-repeat center center/cover;
+    height: 700px;
+    text-align: center;
+}
+
+.banner-content {
+    max-width: 500px;
+    background: rgba(24, 23, 23, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.banner-content h1 {
+    font-size: 42px;
+    color: #2481A6;
+}
+
+.banner-content p {
+    font-size: 20px;
+}
+iframe {
+    border-radius: 10px;
+}
+.btn {
+    display: inline-block;
+    background: #e62429;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #ff2d38;
+}
+
+/* ---- FILMES EM DESTAQUE ---- */
+.filmes {
+    text-align:left;
+    padding: 50px 20px;
+}
+
+.filmesh1 {
+    text-align:center;
+    padding: 50px 20px;
+    font-size: 35px;
+}
+
+.filmes h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.filmes h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.grid-filmes {
+    display: flex;
+    gap: 50px;
+    overflow-x: auto; /* Adiciona rolagem horizontal */
+    padding-bottom: 10px;
+}
+
+.grid-filmes::-webkit-scrollbar {
+    height: 8px; /* Altura da barra */
+}
+
+.grid-filmes::-webkit-scrollbar-track {
+    background: black; /* Fundo da barra */
+}
+
+.grid-filmes::-webkit-scrollbar-thumb {
+    background: #e62429; /* Cor da barra */
+    border-radius: 10px;
+}
+
+
+.card {
+    background: #202020;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+.card img {
+    width: 300px; /* Define um tamanho fixo */
+    height: auto;
+    object-fit: cover;
+}
+
+.card p {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Ajustando o botão do menu para parecer com os outros itens */
+.menu {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu button {
+    background-color: #e62429;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight:lighter;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.menu button:hover {
+    color: #aaaaaa;
+}
+
+/* Ajustando o dropdown para se alinhar melhor */
+.menu-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: -70%;
+    background-color: white;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.menu-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu-content a:hover {
+    background-color: #aaaaaa;
+    border-radius: 5px;
+}
+
+.menu:hover .menu-content {
+    display: block;
+}
+
